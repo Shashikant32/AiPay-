@@ -32,40 +32,53 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid px-5 position-relative d-flex align-items-center justify-content-between">
+    <div class="container-fluid px-1 px-sm-5 position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
       
         <h1 class="sitename"><span class="text-success">Ai</span>Pay</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="add-number.html">Add Number</a></li>
-          <li><a href="offer.html">Offers</a></li>
-          <li><a href="notification.html">Notification</a></li>
-          <li><a href="refer-and-earn.html">Refer & Earn</a></li>
-          <li><a href="use-this-page.html">Use this app</a></li>
-          <li><a href="help-and-support.html">Help & Support</a></li>
-          <li>
-            <div class="flex-shrink-0 dropdown">
-              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
-                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              </a>
-              <ul class="dropdown-menu text-small shadow show mt-3" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0.5px, 34px, 0px);">
-                <li><a class="dropdown-item justify-content-start align-items-center" href="profile.html"><i class="bi bi-person-circle me-2"></i> Profile</a></li>
-                <li><a class="dropdown-item justify-content-start align-items-center" href="#"><b class="bi bi-box-arrow-in-right me-2 fw-bold"></b> Logout</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="wallet.html" class="btn-get-started btn btn-success px-4 py-2"><i class="bi bi-wallet2 me-2 fs-5"></i>Wallet</a>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <div class="d-flex gap-4">
+        <div class="flex-shrink-0 dropdown d-block d-sm-none">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small shadow mt-3" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0.5px, 34px, 0px);">
+            <li><a class="dropdown-item justify-content-start align-items-center" href="profile.html"><i class="bi bi-person-circle me-2"></i> Profile</a></li>
+            <li><a class="dropdown-item justify-content-start align-items-center" href="#"><b class="bi bi-box-arrow-in-right me-2 fw-bold"></b> Logout</a></li>
+          </ul>
+        </div>
 
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="add-number.html">Add Number</a></li>
+            <li><a href="offer.html">Offers</a></li>
+            <li><a href="notification.html">Notification</a></li>
+            <li><a href="refer-and-earn.html">Refer & Earn</a></li>
+            <li><a href="use-this-page.html">Use this app</a></li>
+            <li><a href="help-and-support.html">Help & Support</a></li>
+            <li>
+              <div class="flex-shrink-0 dropdown d-none d-sm-block">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow show mt-3" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0.5px, 34px, 0px);">
+                  <li><a class="dropdown-item justify-content-start align-items-center" href="profile.html"><i class="bi bi-person-circle me-2"></i> Profile</a></li>
+                  <li><a class="dropdown-item justify-content-start align-items-center" href="#"><b class="bi bi-box-arrow-in-right me-2 fw-bold"></b> Logout</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="wallet.html" class="btn-get-started btn btn-success px-4 py-2"><i class="bi bi-wallet2 me-2 fs-5"></i>Wallet</a>
+            </li>
+          </ul>
+          
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+      
     </div>
   </header>
 
@@ -600,6 +613,7 @@
       </div>
 
     </section><!-- /Contact Section -->
+
   </main>
 
   <footer id="footer" class="footer dark-background">
